@@ -5,10 +5,9 @@
 
 #include "CoreMinimal.h"
 #include "Character/ElementCharacterBase.h"
-#include "ElementEnemy.generated.h"
 #include "Interaction/EnemyInterface.h"
 
-
+#include "ElementEnemy.generated.h"
 
 
 /**
@@ -23,5 +22,8 @@ public:
 
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
+
+	UPROPERTY( BlueprintReadOnly )
+	bool bIsHighlighted = false;
 	
 };

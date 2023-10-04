@@ -5,10 +5,10 @@
 
 void AElementEnemy::HighlightActor()
 {
-
+	bIsHighlighted = true;
 }
 
 void AElementEnemy::UnHighlightActor()
 {
-
+	bIsHighlighted = false;
 }
